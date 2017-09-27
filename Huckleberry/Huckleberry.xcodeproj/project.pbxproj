@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		53512CFC18AC3A0300A74F57 /* UYLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53512CFB18AC3A0300A74F57 /* UYLTableViewController.m */; };
 		535C803818AD71750039A2B3 /* SourceData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 535C803718AD71750039A2B3 /* SourceData.plist */; };
+		536259DA1F41DEFD00616356 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 536259D91F41DEFD00616356 /* README.md */; };
 		5363F6D618AADBF6001CBD3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5363F6D518AADBF6001CBD3A /* Foundation.framework */; };
 		5363F6D818AADBF6001CBD3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5363F6D718AADBF6001CBD3A /* CoreGraphics.framework */; };
 		5363F6DA18AADBF6001CBD3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5363F6D918AADBF6001CBD3A /* UIKit.framework */; };
@@ -24,7 +25,7 @@
 		53512CFA18AC3A0300A74F57 /* UYLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UYLTableViewController.h; sourceTree = "<group>"; };
 		53512CFB18AC3A0300A74F57 /* UYLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UYLTableViewController.m; sourceTree = "<group>"; };
 		535C803718AD71750039A2B3 /* SourceData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SourceData.plist; sourceTree = "<group>"; };
-		535C803918AD8AE50039A2B3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		536259D91F41DEFD00616356 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5363F6D218AADBF6001CBD3A /* Huckleberry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Huckleberry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5363F6D518AADBF6001CBD3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5363F6D718AADBF6001CBD3A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,7 +60,7 @@
 		5363F6C918AADBF6001CBD3A = {
 			isa = PBXGroup;
 			children = (
-				535C803918AD8AE50039A2B3 /* README */,
+				536259D91F41DEFD00616356 /* README.md */,
 				5363F6DB18AADBF6001CBD3A /* Huckleberry */,
 				5363F6D418AADBF6001CBD3A /* Frameworks */,
 				5363F6D318AADBF6001CBD3A /* Products */,
@@ -140,7 +141,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = UYL;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Keith Harrison";
 			};
 			buildConfigurationList = 5363F6CD18AADBF6001CBD3A /* Build configuration list for PBXProject "Huckleberry" */;
@@ -182,6 +183,7 @@
 			files = (
 				53512CFC18AC3A0300A74F57 /* UYLTableViewController.m in Sources */,
 				5363F6E218AADBF6001CBD3A /* main.m in Sources */,
+				536259DA1F41DEFD00616356 /* README.md in Sources */,
 				53A8DCA618AC37530053ABAF /* UYLTextCell.m in Sources */,
 				5363F6E618AADBF6001CBD3A /* UYLAppDelegate.m in Sources */,
 			);
@@ -222,13 +224,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -241,7 +249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -260,20 +268,25 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -287,6 +300,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Huckleberry/Huckleberry-Prefix.pch";
 				INFOPLIST_FILE = "Huckleberry/Huckleberry-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.useyourloaf.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -300,6 +314,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Huckleberry/Huckleberry-Prefix.pch";
 				INFOPLIST_FILE = "Huckleberry/Huckleberry-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.useyourloaf.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
